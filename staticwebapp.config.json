@@ -1,9 +1,13 @@
 {
     "routes": [
-        {
-            "route": "/nuxt/dist/index.html",
-            "allowedRoles": ["anonymous"]
-        }
+      {
+        "route": "/",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/dist/index.html",
+        "allowedRoles": ["anonymous"]
+      }
     ],
     "responseOverrides": {
         "400": {

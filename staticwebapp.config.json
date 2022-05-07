@@ -1,26 +1,26 @@
 {
-    "routes": [
-      {
-        "route": "/dist/index.html",
-        "allowedRoles": ["anonymous"]
-      }
-    ],
-    "responseOverrides": {
-        "400": {
-          "rewrite": "/invalid-invitation-error.html"
-        },
-        "401": {
-          "statusCode": 302,
-          "redirect": "/login"
-        },
-        "403": {
-          "rewrite": "/custom-forbidden-page.html"
-        },
-        "404": {
-          "rewrite": "/404.html"
-        }
-      },
-    "platform": {
-        "apiRuntime": "node:16.14.2"
+  "routes": [
+    {
+      "route": "/.output/public/index.html",
+      "allowedRoles": ["anonymous"]
     }
+  ],
+  "responseOverrides": {
+      "400": {
+        "rewrite": "/invalid-invitation-error.html"
+      },
+      "401": {
+        "statusCode": 302,
+        "redirect": "/login"
+      },
+      "403": {
+        "rewrite": "/custom-forbidden-page.html"
+      },
+      "404": {
+        "rewrite": "/404.html"
+      }
+  },
+  "platform": {
+    "apiRuntime": "node:16.14.2"
+  }
 }
